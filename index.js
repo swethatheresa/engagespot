@@ -25,15 +25,7 @@ app.get('/', (request, response) => {
               "POST"
              
             ]
-          },
-          {
-            "route": "/getinterview",
-            "methods": [
-              "GET"
-             
-            ]
-          },
-          
+          },          
         ]
       }
     )
