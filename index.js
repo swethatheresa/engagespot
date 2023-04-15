@@ -8,7 +8,7 @@ const client = EngagespotClient({
 })
 app.use(cors());
 app.use(express.json()); 
-pp.get('/', (request, response) => {
+app.get('/', (request, response) => {
     response.json(
       {
         "message": "ENGAGESPOT API",
