@@ -29,7 +29,8 @@ app.get('/', (request, response) => {
         ]
       }
     )
-  })
+  });
+
 app.post('/adduser', (req, res) => {
     const { email, phoneNumber } = req.body;
     client.createOrUpdateUser(email,{
@@ -56,3 +57,4 @@ app.post('/sentmail', (req, res) => {
 app.listen(3000, () => {
   console.log('Server started on port 3000');
 });
+module.exports = app;
