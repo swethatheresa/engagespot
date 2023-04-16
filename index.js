@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const EngagespotClient = require('@engagespot/node').EngagespotClient;
-
+const bodyParser = require('body-parser');
 app.use(cors());
 app.use(express.json()); 
-
+app.use(bodyParser.json());
 const client = EngagespotClient({
   apiKey:'cq6lc6s7vifzotpky6zmp9',
   apiSecret:'9g7eh66cbato5d07k7h27pfbha4fe8b6j5ajic59hj7j502'
