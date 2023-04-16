@@ -13,7 +13,8 @@ This is a Node.js backend application that uses the Engagespot API to send notif
 
 Clone the repository:
 
-git clone ### `https://github.com/swethatheresa/engagespot`
+git clone 
+### `https://github.com/swethatheresa/engagespot`
 
 
 To install necessary packages
@@ -34,7 +35,7 @@ To add a user, send a POST request to /adduser with the user's email and phone n
 
 
 
-`POST /adduser
+###POST /adduser
 
 
 {
@@ -46,7 +47,7 @@ To add a user, send a POST request to /adduser with the user's email and phone n
   "phoneNumber": "123-456-7890"
   
   
-}`
+}
 
 
 
@@ -54,7 +55,7 @@ To send a notification to a user's email address, send a POST request to /sentma
 
 
 
-`POST /sentmail
+### POST /sentmail
 
 
 {
@@ -63,6 +64,6 @@ To send a notification to a user's email address, send a POST request to /sentma
   "email": "john@example.com"
   
   
-}`
+}
 
 
