@@ -35,7 +35,7 @@ To add a user, send a POST request to /adduser with the user's email and phone n
 
 
 
-###POST /adduser
+### POST /adduser
 
 
 {
