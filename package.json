@@ -13,5 +13,15 @@
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swethatheresa/engagespot.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/swethatheresa/engagespot/issues"
+  },
+  "homepage": "https://github.com/swethatheresa/engagespot#readme",
   "description": ""
 }
