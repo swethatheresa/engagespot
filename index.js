@@ -2,10 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const EngagespotClient = require('@engagespot/node').EngagespotClient;
-const client = EngagespotClient({
-    apiKey:'cq6lc6s7vifzotpky6zmp9',
-    apiSecret:'9g7eh66cbato5d07k7h27pfbha4fe8b6j5ajic59hj7j502'
-})
+
 app.use(cors());
 app.use(express.json()); 
 app.get('/', (request, response) => {
@@ -30,8 +27,15 @@ app.get('/', (request, response) => {
       }
     )
   });
-
+  const client = EngagespotClient({
+    apiKey:'cq6lc6s7vifzotpky6zmp9',
+    apiSecret:'9g7eh66cbato5d07k7h27pfbha4fe8b6j5ajic59hj7j502'
+})
 app.post('/adduser', (req, res) => {
+  const client = EngagespotClient({
+    apiKey:'cq6lc6s7vifzotpky6zmp9',
+    apiSecret:'9g7eh66cbato5d07k7h27pfbha4fe8b6j5ajic59hj7j502'
+})
     const { email, phoneNumber } = req.body;
     client.createOrUpdateUser(email,{
         "email": email,
@@ -41,6 +45,10 @@ app.post('/adduser', (req, res) => {
 });
 
 app.post('/sentmail', (req, res) => {
+  const client = EngagespotClient({
+    apiKey:'cq6lc6s7vifzotpky6zmp9',
+    apiSecret:'9g7eh66cbato5d07k7h27pfbha4fe8b6j5ajic59hj7j502'
+})
   console.log(req.body);
   client.send({
     notification:{
